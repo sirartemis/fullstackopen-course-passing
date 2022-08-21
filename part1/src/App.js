@@ -157,7 +157,7 @@ const Anecdotes = () => {
     const min = Math.ceil(0)
     const max = Math.floor(anecdotes.length)
     let generatedNumber = Math.floor(Math.random() * (max - min)) + min
-    if (generatedNumber === selected) generatedNumber = getRandomAnecdote(selected)
+    if (generatedNumber === selected) generatedNumber = getRandomAnecdote()
     return generatedNumber
   }
 
@@ -172,8 +172,6 @@ const Anecdotes = () => {
   }
 
   const mostVotesIndex = votes.reduce((prev, next, index, arr) => next > arr[prev] ? index : prev, 0)
-
-  console.log(votes)
 
   return (
     <div>
