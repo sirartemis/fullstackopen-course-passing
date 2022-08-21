@@ -6,9 +6,9 @@ const StatisticLine = ({ text, value }) => <tr><td>{text}</td><td>{value}</td></
 
 const Statistics = ({ good, neutral, bad }) => {
 
-  const all = () => good + neutral + bad
-  const average = () => good - bad > 0 ? good - bad : 0 // Sorry, I don't really understand how to calculate this
-  const positive = () => good / (all() / 100) || 0
+  const all = good + neutral + bad
+  const average = () => (good - bad) / all
+  const positive = () => 100 * (good / all) || 0
 
   if ( good || bad || neutral) return (
     <>
