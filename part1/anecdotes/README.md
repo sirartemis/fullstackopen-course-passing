@@ -1,3 +1,4 @@
+# Open from [https://codesandbox.io/s/lingering-cloud-0y19i5](codesandbox)
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
