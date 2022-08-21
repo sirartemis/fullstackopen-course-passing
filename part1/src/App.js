@@ -173,8 +173,6 @@ const Anecdotes = () => {
 
   const mostVotesIndex = votes.reduce((prev, next, index, arr) => next > arr[prev] ? index : prev, 0)
 
-  console.log(votes)
-
   return (
     <div>
       <p>{anecdotes[selected]}</p>
