@@ -19,14 +19,15 @@ jobs:
     
     - name: Install Node.js
       uses: actions/setup-node@v1
-      working-directory: ./part1
       with:
         node-version: 16.x
     
     - name: Install NPM packages
+      working-directory: ./part1
       run: yarn install
     
     - name: Build project
+      working-directory: ./part1
       run: yarn build
 
     - name: Upload production-ready build files
