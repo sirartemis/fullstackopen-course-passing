@@ -7,7 +7,7 @@ const StatisticLine = ({ text, value }) => <tr><td>{text}</td><td>{value}</td></
 const Statistics = ({ good, neutral, bad }) => {
 
   const all = good + neutral + bad
-  const average = () => (good - bad) / all
+  const average = (good - bad) / all
   const positive = () => 100 * (good / all) || 0
 
   if ( good || bad || neutral) return (
