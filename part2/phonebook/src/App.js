@@ -179,7 +179,6 @@ const App = () => {
         setNewNumber={setNewNumber} 
         setNewName={setNewName} 
         addPerson={addPerson} 
-        deletePerson={deletePerson}
       />
       <h3>Numbers</h3>
       <Persons 
